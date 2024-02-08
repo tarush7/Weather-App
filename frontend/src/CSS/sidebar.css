@@ -1,0 +1,16 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+.side-bar {
+    height: 100vh;
+    width: 300px;
+}
+
+p {
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Kalnia', serif;
+    margin-bottom: 0 !important;
+}
+
+.t-index{
+    font-family: 'Kalnia', serif;
+}

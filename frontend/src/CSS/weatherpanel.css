@@ -1,0 +1,23 @@
+p {
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Kalnia', serif;
+    margin-bottom: 0 !important;
+}
+
+.temperature {
+    font-size: 300px;
+    font-family: 'Oswald', sans-serif;
+    padding-left: 27%;
+}
+
+.weather-info {
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    padding-top: 25%;
+    margin-top: 20% !important;
+}
+
+.weather-info-location{
+    font-family: 'Fira Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
+}

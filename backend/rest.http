@@ -1,0 +1,5 @@
+###
+GET http://localhost:1337/api/weather?location=rajasthan
+
+####
+GET http://localhost:1337/api/weather?location=agra
