@@ -20,51 +20,40 @@ function Weatherpanel() {
     if (loading) return (<div>
         <Container className='vh-100'>
             <Row>
-                <Col md={4}>
-                    <Placeholder as="p" animation="glow">
-                        <Placeholder xs={6} size="lg" />
-                    </Placeholder>
-                </Col>
-                <Col md={{ span: 4, offset: 4 }}>
-                    <Placeholder as="p" animation="glow">
-                        <Placeholder xs={6} size="lg" />
-                    </Placeholder>
-                </Col>
+                <Col md={4}><Placeholder as="p" animation="glow"><Placeholder xs={6} size="lg" /></Placeholder></Col>
+                <Col md={{ span: 4, offset: 4 }}><Placeholder as="p" animation="glow"><Placeholder xs={6} size="lg" /></Placeholder></Col>
             </Row>
             <Row>
                 <Col xs={8}>
-                    <Placeholder as="p" animation="glow">
-                        <Placeholder xs={12} />
-                    </Placeholder>
+                    <div className="temperature"><Placeholder as={Col} animation="glow"><Placeholder xs={6} style={{ width: '25rem' }} /></Placeholder></div>
                 </Col>
                 <Col className='weather-info p-5'>
                     <Stack direction="vertical">
-                        <Placeholder as="span" animation="glow">
-                            <Placeholder xs={6} />
-                        </Placeholder>
+                        <div className='pb-1'><i className="bi bi-wind"></i><span className='fs-5 weather-info-location m-3'><Placeholder as="p" animation="glow"><Placeholder xs={6} size="lg" /></Placeholder></span>
+                            <Placeholder as={ProgressBar} animation="glow"><Placeholder xs={2} /></Placeholder>
+                        </div>
 
-                        <div className='pb-1'>
-                            <Placeholder as="span" animation="glow">
-                                <Placeholder xs={6} />
-                            </Placeholder>
+                        <div className='pb-1'><i className="bi bi-moisture fs-2"></i><span className='fs-5 weather-info-location m-3'><Placeholder as="p" animation="glow"><Placeholder xs={6} size="lg" /></Placeholder></span>
+                        <Placeholder as={ProgressBar} animation="glow"><Placeholder xs={2} /></Placeholder>
+                        </div>
+
+                        <div className='pb-1'><i className="bi bi-thermometer-sun fs-2"></i><span className='fs-5 weather-info-location m-3'><Placeholder as="p" animation="glow"><Placeholder xs={6} size="lg" /></Placeholder></span>
+                        <Placeholder as={ProgressBar} animation="glow"><Placeholder xs={2} /></Placeholder>
                         </div>
 
                         <div className='pb-1'>
-                            <Placeholder as="span" animation="glow">
-                                <Placeholder xs={6} />
-                            </Placeholder>
-                        </div>
-
-                        <div className='pb-1'>
-                            <Placeholder as="span" animation="glow">
-                                <Placeholder xs={6} />
-                            </Placeholder>
+                            <i className="bi bi-cloud-haze fs-2"></i><span className='fs-5 weather-info-location m-3'><Placeholder as="p" animation="glow"><Placeholder xs={6} size="lg" /></Placeholder></span>
+                            <Placeholder as={ProgressBar} animation="glow"><Placeholder xs={2} /></Placeholder>
                         </div>
                     </Stack>
                 </Col>
             </Row>
         </Container>
-    </div>)
+
+    </div>
+
+
+    )
 
 
     return (

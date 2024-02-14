@@ -85,24 +85,20 @@ function Sidebar() {
 
   return (
     <div>
-      <Navbar expand="lg" className="bg-body-tertiary flex-column side-bar">
+      <Navbar expand="lg" className="bg-body-tertiary flex-column side-bar ">
         <Container fluid className='d-flex flex-column'>
           <Navbar.Brand className='d-flex mb-2' href="#"><i className="bi bi-geo-alt me-2 fs-1"></i><p className='fs-1'>Location</p></Navbar.Brand>
-          <Navbar.Toggle aria-controls="navbarScroll" />
-          <Navbar.Collapse id="navbarScroll" className="flex-column">
-
-            <Form className="d-flex flex-column" style={{ width: '15rem' }} onSubmit={handleSubmit}>
-              <Form.Control
-                type="search"
-                placeholder="eg. Delhi"
-                className="me-2 mb-2"
-                aria-label="Search"
-                value={inputValue}
-                onChange={(e) => setInputValue(e.target.value)}
-              />
-              <Button variant="outline-dark" type='submit' disabled={loading}>Search</Button>
-            </Form>
-          </Navbar.Collapse>
+              <Form className="d-flex flex-column" style={{ width: '15rem' }} onSubmit={handleSubmit}>
+                <Form.Control
+                  type="search"
+                  placeholder="eg. New Delhi"
+                  className="me-2 mb-2"
+                  aria-label="Search"
+                  value={inputValue}
+                  onChange={(e) => setInputValue(e.target.value)}
+                />
+                <Button variant="outline-dark" type='submit' disabled={loading}>Search</Button>
+              </Form>
           {
             <div>
               <Card className='mt-5' border="secondary" bg='dark' text='light' style={{ width: '15rem' }}>

@@ -14,3 +14,8 @@ p {
 .t-index{
     font-family: 'Kalnia', serif;
 }
+
+.scrollable-div {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
