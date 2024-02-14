@@ -11,7 +11,7 @@ export const WeatherProvider = ({ children }) => {
 
   const handleLocationChange = (newLocation) => {
     setLocation(newLocation);
-    doFetch(`http://localhost:1337/api/weather?location=${newLocation}`);
+    doFetch(`https://awesome-growth-31a919bca5.strapiapp.com/api/weather?location=${newLocation}`);
   };
 
   return (
